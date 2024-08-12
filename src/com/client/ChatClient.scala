@@ -4,13 +4,23 @@ import java.io._
 import java.net.Socket
 import java.util.Scanner
 
-class ChatClient(host: String, port: Int, userName: String) {
+class ChatClient(host: String, port: Int, var userName: String) {
   private val socket = new Socket(host, port)
   private val bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream))
   private val bufferedWriter = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream))
 
   def start(): Unit = {
-    sendUserName()
+    var validUserName: Boolean = false
+    while (!validUserName) {
+      sendUserName()
+      val serverResponse = bufferedReader.readLine()
+      if (serverResponse == "SYSTEM|Username already taken") {
+        println("Username already taken. Please enter a different username:")
+        userName = new Scanner(System.in).nextLine()
+      } else {
+        validUserName = true
+      }
+    }
 
     val listenerThread = new Thread(new Runnable {
       override def run(): Unit = {
