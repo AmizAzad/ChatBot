@@ -23,6 +23,6 @@ chatserver
 9001  
 ** Port on which chatserver is running **  
 `Enter your user name:`  
-** You can use username of your choice as long as it is already not taken **`
+** You can use username of your choice as long as it is not already taken **
 
 Note: In case multiple instances of chatclient are to be run on the same machine, make sure to choose a different name "chatclient1, chatclient2" for each instance.
