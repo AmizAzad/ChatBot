@@ -54,3 +54,9 @@
 12 Aug 2024 03:47:025 PM | User [Amiz] disconnected
 12 Aug 2024 03:47:025 PM | Error sending message to [Amiz]: Stream closed
 12 Aug 2024 03:47:025 PM | Server shutdown
+12 Aug 2024 07:24:041 PM | Server started on port: [9001]
+12 Aug 2024 07:24:055 PM | User [Amiz] connected
+12 Aug 2024 07:25:012 PM | User [Ron] connected
+12 Aug 2024 07:25:021 PM | User [Ron] disconnected
+12 Aug 2024 07:25:021 PM | User [Amiz] disconnected
+12 Aug 2024 07:25:021 PM | Server shutdown
