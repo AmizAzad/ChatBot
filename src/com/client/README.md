@@ -1,4 +1,4 @@
-Use the below commands to pull the chatclient image to your machine and run:
+####Use the below commands to pull the chatclient image to your machine and run:
 
 Login to docker. Enter your Docker Hub username and password when prompted.  
 `docker login`
