@@ -25,4 +25,4 @@ Use the below commands to pull the chatclient image to your machine and run:
    Enter your user name:
      ** You can use username of your choice as long as it is already not taken **
 
-NOte: In case multiple instances of chatclient are to be run on the same machine, make sure to choose a different name "chatclient1, chatclient2" for each instance.
+Note: In case multiple instances of chatclient are to be run on the same machine, make sure to choose a different name "chatclient1, chatclient2" for each instance.
