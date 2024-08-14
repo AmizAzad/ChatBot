@@ -1,22 +1,22 @@
 Use the below commands to pull the chatclient image to your machine and run:
 
-1. Login to docker. Enter your Docker Hub username and password when prompted.
-   `docker login`
+Login to docker. Enter your Docker Hub username and password when prompted.  
+`docker login`
 
-3. Pull the chatserver image.
+Pull the chatserver image.
    `docker pull amizazad/chatclient`
 
-4. Verify if the image is pulled to your local machine.
+Verify if the image is pulled to your local machine.
    `docker images`
 
-5. If both, server and client, are to be run in Docker, they need to be in the same Docker network.
+If both, server and client, are to be run in Docker, they need to be in the same Docker network.
    You can create a custom network and run both containers in that network.
    `docker network create chat_network`
 
-6. Run the chatclient.
+Run the chatclient.
    `docker run -it --name chatclient --network chat_network amizazad/chatclient`
 
-7. Once chatclient is up and running, it will prompt for the following information. Provide the details as mentioned below.
+Once chatclient is up and running, it will prompt for the following information. Provide the details as mentioned below.
     `Enter server host:`
     chatserver
     `Enter server port:`
